@@ -30,7 +30,7 @@ function EmpList() {
             })
                 .then(() => {
                     alert("Deleted successfully..!!")
-                    location.reload()
+                    window.location.reload(false)
                 })
         }
     }
@@ -92,7 +92,7 @@ function EmpList() {
             .then(() => {
                 alert("Logged out succefully..!")
                 navigate("/login")
-                location.reload()
+                window.location.reload(false)
             })
             .catch((err) => {
                 alert("error "+err)
