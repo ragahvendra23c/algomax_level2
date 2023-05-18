@@ -43,7 +43,7 @@ const navigate=useNavigate()
             .then(() => {
                 alert("Logged in succefully..!")
                 navigate("/list")
-                window.location.reload()
+                
             })
             .catch((err) => {
                 alert("Username or password is incorrect...!")
